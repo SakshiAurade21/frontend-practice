@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form action="/submit.php">
+        <h1>Register here !</h1>
+
+        <label for="name">Full Name :</label>
+        <input type="text" name="name" id="name" placeholder="Write a name here" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Write a email here ">
+        <br><br>
+
+        <label for="phone">Phone Number :</label>
+        <input type="tel" name="phone" id="phone" 
+        pattern="[0-9]{10}"
+         placeholder="enter a phone number" required>
+        <br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password" placeholder="enter password" required>
+        <br><br>
+
+        <label for="date">Date :</label>
+        <input type="date" name="date" id="date" required>
+        <br><br>
+
+        <label for="gender">Gender :</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled>Select gender from following</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="hobby">Choose your hobbies :</label>
+        <label><input type="checkbox" name="hobby" value="reading">Reading</label>
+        <label><input type="checkbox" name="hobby" value="writting">Writting</label>
+        <label><input type="checkbox" name="hobby" value="dancing">dancing</label>
+        <br><br>
+
+        <label for="class">Choose your Class :</label>
+        <label><input type="radio" name="class" value="A">Class A</label>
+        <label><input type="radio" name="class" value="B">Class B</label>
+        <label><input type="radio" name="class" value="C">Class C</label>
+        <br><br> 
+
+        <label for="comment">Write feedback here</label><br>
+        <textarea name="comment" id="comment" rows="4" placeholder="Write your feedback here"></textarea>
+        <br><br>
+
+        <label for="aggrement"><input type="checkbox" name="aggrement" id="aggrement" required>Click here if your aggre
+            with all condition</label>
+        <br> <br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
